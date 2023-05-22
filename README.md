@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Landing page do intensivão da Rocketseat...
 
-[🔗 Clique aqui para acessar](https://email-react-jet.vercel.app/)
+[🔗 Clique aqui para acessar](https://projeto-explore.vercel.app/)
 
 ---
 
