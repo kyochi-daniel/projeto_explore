@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea {
+    font-family: 'Mulish', sans-serif;
+}
+
+.stage-01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage-01 .home-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stage-01 .imageAnimation {
+    animation: rightAnimation 1.5s;
+}
+
+.stage-01 h1 {
+    font-size: 2rem;
+    color: #B52184;
+    margin: 1.0625rem 0 0.3125rem;
+    animation: leftAnimation 1.5s;
+}
+
+.stage-01 p {
+    font-size: 1.25rem;
+    color: #312D64;
+    margin-bottom: 2.1875rem;
+    animation: leftAnimation 1.5s;
+}
+
+.stage-01 a {
+    border: none;
+    background-color: transparent;
+    border-radius: 80px;
+    border: 2px solid #B52184;
+    padding: 1.5625rem 0.875rem;
+    margin-bottom: 5.8125rem;
+    animation: downTop 1.5s;
+}
+
+.stage-01 a svg {
+    color: #B52184;
+    width: 32px;
+    height: 45px;
+}
+
+.stage-02 {
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+.stage-02 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+
+    padding: 3.25rem 2.5rem; 
+}
+
+.stage-02 .cards .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    background-color: #fff;
+    border-radius: 20px;
+
+    padding: 1.625rem;
+}
+
+.stage-02 .cards .card-info:nth-child(2n + 1) {
+    animation: leftAnimation 1.5s;
+}
+
+.stage-02 .cards .card-info:nth-child(2) {
+    animation: rightAnimation 1.5s;
+}
+
+.stage-02 .cards .card-info h2 {
+    font-size: 1.875rem;
+    color: #B52184;
+    margin-top: 0.625rem;
+}
+
+.stage-02 .cards .card-info p {
+    font-size: 1rem;
+    color: #312D64;
+}
+
+.stage-03 h2{
+    font-size: 2rem;
+    color: #B52184;
+    margin-bottom: 2.5rem;
+}
+
+.stage-03 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5rem;
+
+    padding: 4.875rem 2.5rem;
+
+    width: 100%;
+
+    animation: leftAnimation 1.5s;
+}
+
+.stage-03 form input {
+    border: 0;
+    width: 100%;
+}
+
+.stage-03 form input::placeholder {
+    color: #312D64;
+    font-weight: 600;
+}
+
+.stage-03 form input:focus {
+    outline: none;
+}
+
+.stage-03 form .input {
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+
+    padding: 0.75rem 0.875rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.stage-03 form textarea {
+    border: 1.5px solid #312D64;
+    border-radius: 16px;
+
+    padding: 0.75rem 0.875rem;
+    max-height: 6.25rem;
+    height: 100vh;
+
+    resize: none;
+}
+
+.stage-03 form textarea::placeholder {
+    color: #312D64;
+    font-weight: 600;
+}
+
+.stage-03 form button {
+    cursor: pointer;
+
+    width: 150px;
+    padding: 15px 0;
+
+    border: 0;
+    border-radius: 16px;
+
+    color: #fff;
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+.image-desktop {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+footer p {
+    color: #fff;
+}
+
+@media (min-width: 1024px) {
+    .stage-01 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        margin-bottom: 2.25rem;
+    }
+
+    .stage-01 .home-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .stage-01 a svg{
+        color: #B52184;
+        width: 1.25rem;
+        height: 2.8125rem;
+    }
+
+    .stage-02 .cards {
+        flex-direction: row;
+    }
+
+    .stage-02 .cards .card-info {
+        width: 100%;
+        max-width: 366px;
+        margin: 0 auto;
+    }
+
+    .stage-02 .cards .card-info:nth-child(1) {
+        animation: leftAnimation 1.5s;
+    }
+
+    .stage-02 .cards .card-info:nth-child(2) {
+        animation: downTop 1s;
+    }
+
+    .stage-02 .cards .card-info:nth-child(3) {
+        animation: rightAnimation 1.5s;
+    }
+
+    .stage-02 .cards .card-info h2 {
+        font-size: 25px;
+    }
+
+    .stage-03 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .stage-03 form {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 1.5rem;
+    
+        padding: 3.125rem 4.375rem;
+    
+        width: 100%;
+
+        animation: leftAnimation 1.5s;
+    }
+
+    .image-desktop {
+        display: block;
+        width: 40%;
+        background-size: contain;
+
+        animation: opacityAnimation 2s;
+    }
+}
+
+@keyframes rightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes leftAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes downTop {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacityAnimation {
+    0% { 
+        opacity: 0;
+    }
+
+    100% { 
+        opacity: 1;
+    }
+}
