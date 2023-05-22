@@ -1,4 +1,4 @@
-<h1 align="center"> Formulário Email</h1>
+<h1 align="center"> Landing Page</h1>
 
 <p align="center">
 Projeto de validação de formulário.
@@ -11,21 +11,20 @@ Projeto de validação de formulário.
 <br>
 
 <p align="center">
-  <img alt="github-favorites" src=".github/previewImage.png" width="65%">
+  <img alt="github-favorites" src=".github/preview.png" width="65%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- ReactJs
-- EmailJs
+- HTML e CSS
 - Git e Github
 <br>
 
 ## 💻 Projeto
 
-Essa aplicação tem como propósito, fazer uma validação diretamente ao email, usando o EmailJs você consegue vincular seu email. Fazendo com que todas as mensagens vão direto a sua caixa de entrada.
+Landing page do intensivão da Rocketseat...
 
 [🔗 Clique aqui para acessar](https://email-react-jet.vercel.app/)
 
